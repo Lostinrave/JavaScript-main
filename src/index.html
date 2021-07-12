@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webpack Boilerplate Starter Template</title>
+    <meta
+      name="description"
+      content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools."
+    />
+    <meta
+      name="keywords"
+      content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  </head>
+  <body>
+    <!-- On loader animation html start-->
+    <div class="loader-wrapper">
+      <svg viewBox="0 0 248 248.667" class="hexagon">
+        <filter id="displacementFilter">
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0.05"
+            numOctaves="1"
+            result="turbulence"
+          />
+          <feDisplacementMap
+            in2="turbulence"
+            in="SourceGraphic"
+            scale="30"
+            xChannelSelector="R"
+            yChannelSelector="G"
+          />
+        </filter>
+        <polygon
+          style="filter: url(#displacementFilter); transform-origin: center"
+          points="64 68.64 8.574 100 63.446 67.68 64 4 64.554 67.68 119.426 100"
+          fill="#000000"
+        />
+      </svg>
+      <div class="section-left"></div>
+      <div class="section-right"></div>
+    </div>
+
+    <!--animated squares example-->
+    <!-- <div class="square-wrapper">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div> -->
+    <!-- On loader animation html end-->
+
+    <header>
+      <!--Header top wrap start-->
+      <div class="header-top-wrap border-bottom">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12"></div>
+          </div>
+        </div>
+      </div>
+      <!--Header top wrap end-->
+      <!--Header bottom start-->
+      <div class="header-bottom-wrap header-sticky">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Header bottom end-->
+    </header>
+    <!--Header end-->
+    <!--Whole site wrapper-->
+    <div id="main-wrapper">
+      <!--Toolbar start-->
+
+      <div id="toolbarPopup" class="demo-option-container">
+        <div class="aeroland-toolbar">
+          <div class="inner">
+            <a href="#" id="popupLink" data-toolbar="Quick options"
+              ><i class="las la-share-alt toolbar-icon"></i
+            ></a>
+            <a href="#"><i class="las la-life-ring toolbar-icon"></i></a>
+            <a href="#"><i class="las la-shopping-cart toolbar-icon"></i></a>
+          </div>
+        </div>
+
+        <!--Toolbar quick-link start-->
+
+        <div class="demo-option-wrapper">
+          <div class="demo-panel-header">
+            <div class="title">
+              <h6>
+                IT Solutions Mitech - Technology, IT Solutions & Services Html5
+                Template
+              </h6>
+              <div class="panel-btn">
+                <a href="#" class="btn btn-primary btn-buy-now"
+                  ><i class="las la-shopping-cart"></i> Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Toolbar quick-link end-->
+
+      <!--Toolbar end-->
+
+      <div class="site-wrapper-reveal">
+        <!--Whole site wrapper-->
+        <!-- Main "Hero" start-->
+        <div class="infotechno-hero infotechno-bg">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <!--Baseline?-->
+              <div class="col-lg-6 col-md-6">
+                <div class="infotechno-hero-text wow move-up animated">
+                  <h6>IT Design & Consulting</h6>
+                  <h1 class="font-weight--reguler mb-3">
+                    Facilitate All <br />
+                    Local IT-related Service Providers
+                  </h1>
+                  <p>
+                    Highly Tailored IT Design, Management & Support Services.
+                  </p>
+
+                  <div class="hero-button mt-3">
+                    <a href="#" class="btn btn-primary rounded btn-main"
+                      >Get details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="infotechno-hero-inner-images">
+                  <div class="infotechno-inner-one">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/hero/home-infotechno-main-slider-slide-01-image-01.png"
+                      alt="main background image"
+                    />
+                  </div>
+                  <div class="infotechno-inner-two wow move-up animated">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/hero/home-infotechno-main-slider-slide-01-image-02.png"
+                      alt="dude"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main "Hero" end-->
+        <!--Slider brand area start-->
+
+        <div class="container">
+          <div class="multiple-items d-flex">
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wrapper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-01.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-01-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-02.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-02-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-03.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-03-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-04.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-04-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-05.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-05-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-06.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-06-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-07.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-07-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="mw-100 slick-relative">
+              <a href="#">
+                <div class="slider-wraper" style="height: 150px">
+                  <div class="slider-img">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-08.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="slider-img-hover">
+                    <img
+                      class="img-fluid"
+                      src="https://demo.hasthemes.com/mitech-preview/assets/images/brand/mitech-client-logo-08-hover.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--Slider brand area end-->
+
+        <!--Features-wrapper start-->
+        <div class="features-wrapper bg-light text-center">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6">
+                <!--Title wrap start-->
+                <div class="section-title-wrap text-center">
+                  <h6 class="section-sub-title mb-3">Our services</h6>
+                  <h3 class="heading">
+                    For your very specific industry,
+                    <span class="text-primary">
+                      highly-tailored IT solutions.</span
+                    >
+                  </h3>
+                </div>
+                <!--Title wrap end-->
+              </div>
+            </div>
+          </div>
+          <!--Features cards start-->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="features-cards">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-12 p-3">
+                      <div class="card">
+                        <div class="card-wrapper p-3">
+                          <div
+                            class="
+                              bg-image
+                              hover-overlay
+                              ripple
+                              text-center
+                              pt-5
+                              pb-5
+                            "
+                            data-mdb-ripple-color="light"
+                          >
+                            <img
+                              src="https://demo.hasthemes.com/mitech-preview/assets/images/icons/mitech-box-image-style-01-image-01-100x108.png"
+                              class="img-fluid"
+                              alt="..."
+                            />
+                            <a href="#!">
+                              <div
+                                class="mask"
+                                style="
+                                  background-color: rgba(251, 251, 251, 0.15);
+                                "
+                              ></div>
+                            </a>
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">IT Design</h5>
+                            <p class="card-text">
+                              We provide the most responsive and functional IT
+                              design for companies and businesses worldwide.
+                            </p>
+                            <div class="button-center">
+                              <a href="#!" class="btn btn-primary btn-features"
+                                ><i class="las la-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-3">
+                      <div class="card">
+                        <div class="card-wrapper p-3">
+                          <div
+                            class="
+                              bg-image
+                              hover-overlay
+                              ripple
+                              text-center
+                              pt-5
+                              pb-5
+                            "
+                            data-mdb-ripple-color="light"
+                          >
+                            <img
+                              src="https://demo.hasthemes.com/mitech-preview/assets/images/icons/mitech-box-image-style-01-image-01-100x108.png"
+                              class="img-fluid"
+                              alt="..."
+                            />
+                            <a href="#!">
+                              <div
+                                class="mask"
+                                style="
+                                  background-color: rgba(251, 251, 251, 0.15);
+                                "
+                              ></div>
+                            </a>
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">IT Design</h5>
+                            <p class="card-text">
+                              We provide the most responsive and functional IT
+                              design for companies and businesses worldwide.
+                            </p>
+                            <div class="button-center">
+                              <a href="#!" class="btn btn-primary btn-features"
+                                ><i class="las la-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 p-3">
+                      <div class="card">
+                        <div class="card-wrapper p-3">
+                          <div
+                            class="
+                              bg-image
+                              hover-overlay
+                              ripple
+                              text-center
+                              pt-5
+                              pb-5
+                            "
+                            data-mdb-ripple-color="light"
+                          >
+                            <img
+                              src="https://demo.hasthemes.com/mitech-preview/assets/images/icons/mitech-box-image-style-01-image-01-100x108.png"
+                              class="img-fluid"
+                              alt="..."
+                            />
+                            <a href="#!">
+                              <div
+                                class="mask"
+                                style="
+                                  background-color: rgba(251, 251, 251, 0.15);
+                                "
+                              ></div>
+                            </a>
+                          </div>
+                          <div class="card-body text-center">
+                            <h5 class="card-title">IT Design</h5>
+                            <p class="card-text">
+                              We provide the most responsive and functional IT
+                              design for companies and businesses worldwide.
+                            </p>
+                            <div class="button-center">
+                              <a href="#!" class="btn btn-primary btn-features"
+                                ><i class="las la-arrow-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="under-heading text-center">
+                  Challenges are just opportunities in disguise.
+                  <a href="#">Take the challenge!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Features cards end-->
+        <!--Features-wrapper end-->
+        <!--Company experience wrapper start-->
+        <div class="section-experience infotechno-section-bg-01">
+          <div class="experience-wrapper">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 ps-5 pe-5">
+                  <div class="section-title-wrap">
+                    <h6 class="section-sub-title mb-3">Our company</h6>
+                    <h3 class="heading">
+                      We’ve been thriving in
+                      <span class="text-primary">38 years</span>
+                    </h3>
+                    <p class="mt-4 mb-3">
+                      Mitech specializes in technological and IT-related
+                      services such as product engineering, warranty management,
+                      building cloud, infrastructure, network, etc. We put a
+                      strong focus on the needs of your business to figure out
+                      solutions that best fits your demand and nail it.
+                    </p>
+
+                    <div class="hero-button mt-3">
+                      <a href="#" class="btn btn-primary rounded btn-main"
+                        >Join us now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 ms-auto">
+                  <div class="numbered-list">
+                    <div class="list-item">
+                      <a class="link" href="#">
+                        <div class="list-header">
+                          <div class="marker">01</div>
+                          <div class="title-wrap">
+                            <h6 class="title">
+                              How we can help your business?<i
+                                class="las la-arrow-right ps-3"
+                              ></i>
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a class="link" href="#">
+                        <div class="list-header">
+                          <div class="marker">02</div>
+                          <div class="title-wrap">
+                            <h6 class="title">
+                              Why become our partner?
+                              <i class="las la-arrow-right ps-3"></i>
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="list-item">
+                      <a class="link" href="#">
+                        <div class="list-header">
+                          <div class="marker">03</div>
+                          <div class="title-wrap">
+                            <h6 class="title">
+                              What are the best of Mitech?
+                              <i class="las la-arrow-right ps-3"></i>
+                            </h6>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Experience images wrapper start-->
+
+          <div class="feature-images-wrapper">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12"></div>
+              </div>
+            </div>
+          </div>
+          <!--Experience images wrapper end-->
+        </div>
+        <!--Company experience wrapper end-->
+
+        <!--Projects section wrapper start-->
+        <div
+          class="projects-wrapper projectinfotechno-bg section-space--ptb_100"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-title-wrap text-center mb-5">
+                  <h6 class="section-sub-title mb-5">Case studies</h6>
+                  <h3 class="heading">
+                    Proud projects that
+                    <span class="text-primary"> make us stand out</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!--Projects section cards start-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="cards-slider">
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-03-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-04-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-01-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-02-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-04-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      <div class="card">
+                        <img
+                          src="https://demo.hasthemes.com/mitech-preview/assets/images/projects/case-study-03-480x298.jpg"
+                          class="card-img-top img-fluid"
+                          alt="..."
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title
+                            and make up the bulk of the card's content.
+                          </p>
+                          <div class="box-projects-arrow text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                          <div class="box-projects-arrow-hover text-center">
+                            <span class="button-text">View case study</span>
+                            <i class="las la-arrow-right"></i>
+                          </div>
+                        </div></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Video section wrapper start-->
+        <div
+          class="
+            infotechno-video-wrapper infotechno-video-ptb infotechno-video-bg
+          "
+        >
+          <div class="container">
+            <div class="row reverse">
+              <div class="col-lg-6 col-md-10 col-11 ml-auto">
+                <div class="vieeo-content-wrap">
+                  <div class="video-content-inner">
+                    <h2 class="heading">
+                      Share the joy of achieving glorious moments
+                      <br />
+                      & climbing up the top.
+                    </h2>
+                    <div class="viewo-text-wrap">
+                      <div class="video-popup infotech-video-box">
+                        <a data-fancybox='event'
+                          href="https://www.youtube.com/watch?v=9No-FiEInLA&ab_channel=Google"
+                          class="single-popup-wrap video-link"
+                        >
+                          <div class="video-content">
+                            <div
+                              class="ht-popup-video video-button"
+                            >
+                              <div class="video-mark">
+                                <div class="wave-pulse wave-pulse-1"></div>
+                                <div class="wave-pulse wave-pulse-2"></div>
+                              </div>
+                              <div class="video-button__two">
+                                <div class="video-play">
+                                  <span class="video-play-icon"> </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="video-text">
+                              Watch video
+                              <br />
+                              intro
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Video section wrapper end-->
+
+        <div id="slapukai" class="slapukai-container">
+          <h2>ŠIOJE SVETAINĖJE NAUDOJAMI SLAPUKAI</h2>
+          <p>
+            Naudojame slapukus, kad galėtume suasmeninti turinį bei skelbimus,
+            teikti visuomeninės medijos funkcijas ir analizuoti srautą. Be to,
+            svetainės naudojimo informaciją bendriname su visuomeninės medijos,
+            reklamavimo ir analizės partneriais, kurie gali ją pridėti prie
+            kitos jūsų pateiktos arba naudojant paslaugas surinktos
+            informacijos.
+          </p>
+          <button class="submit" id="sutinku">Sutinku</button>
+          <a href="#" class="dropdown">Daugiau informacijos</a>
+        </div>
+
+        <!--Whole site wrapper end-->
+      </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZRQBM133GZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZRQBM133GZ");
+    </script>
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- CSS animations -->
+    <!-- <div class="row">
+          <div class="col-4"> 
+            <div class="card mt-3 animated-card">
+              <img src="https://images.unsplash.com/photo-1624125276465-5d617a7030f9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+               
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+
+              <div class="animated-arrow">
+                <i class="las la-arrow-right"></i>
+              </div>
+            </div>
+          </div> 
+        </div> -->
+  </body>
+</html>
