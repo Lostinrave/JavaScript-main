@@ -22,13 +22,10 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #f4efe9;
   z-index: 10000;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 500ms;
-  animation-delay: 2000ms;
   .hexagon {
     display: flex;
     justify-content: center;
@@ -41,6 +38,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     width: 200px;
     height: 200px;
     transform: translate(-25%, -25%);
+	transition: all 500ms;
 
 
     // animated squares
@@ -58,7 +56,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     width: 50%;
     height: 100%;
     background-color: #f4efe9;
-    transition: all 500ms;
+    transition: all 1000ms;
   }
   .section-right {
     position: absolute;
@@ -67,18 +65,16 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     width: 50%;
     height: 100%;
     background-color: #f4efe9;
-    transition: all 500ms;
+    transition: all 1000ms;
   }
 }
 .loader-wrapper.hidden .section-left,
 .loader-wrapper.hidden .section-right {
-  width: 0%;
+  width: 0;
 
 }
-.loader-wrapper.hidden {
+.loader-wrapper.hidden .hexagon {
   opacity: 0;
-  
-
 }
 
 /* On load animation css end */

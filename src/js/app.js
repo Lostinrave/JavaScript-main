@@ -16,7 +16,7 @@ import anime from "animejs/lib/anime.es.js";
 // import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
 
 $(window).on("load", function () {
-  $(".loader-wrapper").delay(2000).fadeOut(800);
+  $(".loader-wrapper").delay(2000).addClass('hidden');
   anime({
     targets: [".hexagon polygon", "feTurbulence", "feDisplacementMap"],
     points: "64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96",
