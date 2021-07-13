@@ -16,7 +16,6 @@ import anime from "animejs/lib/anime.es.js";
 // import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
 
 $(window).on("load", function () {
-  $(".loader-wrapper").delay(2000).addClass('hidden');
   anime({
     targets: [".hexagon polygon", "feTurbulence", "feDisplacementMap"],
     points: "64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96",
@@ -27,6 +26,11 @@ $(window).on("load", function () {
     fill: "#086ad8",
     easing: "easeInOutExpo",
   });
+  setTimeout(function(){
+    $(".loader-wrapper").addClass('hidden');
+
+  },3000);
+ 
   // anime({
   //   targets: '.square',
   //   translateY: 250,

@@ -38,8 +38,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     width: 200px;
     height: 200px;
     transform: translate(-25%, -25%);
-	transition: all 500ms;
-
+    transition: all 500ms;
 
     // animated squares
     // .square {
@@ -71,7 +70,6 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
 .loader-wrapper.hidden .section-left,
 .loader-wrapper.hidden .section-right {
   width: 0;
-
 }
 .loader-wrapper.hidden .hexagon {
   opacity: 0;
