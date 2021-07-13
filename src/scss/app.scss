@@ -26,6 +26,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
   display: flex;
   justify-content: center;
   align-items: center;
+  display: block;
   .hexagon {
     display: flex;
     justify-content: center;
@@ -67,6 +68,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
     transition: all 1000ms;
   }
 }
+
 .loader-wrapper.hidden .section-left,
 .loader-wrapper.hidden .section-right {
   width: 0;
@@ -74,6 +76,7 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
 .loader-wrapper.hidden .hexagon {
   opacity: 0;
 }
+
 
 /* On load animation css end */
 .animated-card {
@@ -728,3 +731,87 @@ a {
 }
 
 /* Video wrapper CSS end */
+/* Scroll top CSS start */
+
+.scroll-top {
+  position: fixed;
+  right: 30px;
+  bottom: -60px;
+  z-index: 999;
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+  display: block;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #086AD8;
+  background-size: 200% auto;
+  background-position: left center;
+  color: #ffffff;
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 479px) {
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+}
+
+.scroll-top.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 60px;
+}
+
+.scroll-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.scroll-top .arrow-top {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.scroll-top .arrow-bottom {
+  -webkit-transform: translate(-50%, 80px);
+      -ms-transform: translate(-50%, 80px);
+          transform: translate(-50%, 80px);
+}
+
+.scroll-top:hover {
+  background-position: right center;
+}
+.scroll-top:hover .arrow-top {
+  -webkit-transform: translate(-50%, -80px);
+      -ms-transform: translate(-50%, -80px);
+          transform: translate(-50%, -80px);
+}
+
+.scroll-top:hover .arrow-bottom {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+/* Scroll top CSS end */

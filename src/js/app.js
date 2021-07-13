@@ -26,9 +26,9 @@ $(window).on("load", function () {
     fill: "#086ad8",
     easing: "easeInOutExpo",
   });
+  $(".loader-wrapper").addClass('hidden');
   setTimeout(function(){
-    $(".loader-wrapper").addClass('hidden');
-
+   $('.loader-wrapper').hide();
   },3000);
  
   // anime({
@@ -153,4 +153,61 @@ $(document).ready(function () {
   $("#sutinku").on("click", function () {
     $(this).parent().slideUp(500);
   });
+});
+// scroll top function from mitech demo
+// function scrollToTop() {
+//   var $scrollUp = $('#scroll-top'),
+//       $lastScrollTop = 0,
+//       $window = $(window);
+
+//   $window.on('scroll', function () {
+//       var st = $(this).scrollTop();
+//       if (st > $lastScrollTop) {
+//           $scrollUp.removeClass('show');
+//       } else {
+//           if ($window.scrollTop() > 500) {
+//               $scrollUp.addClass('show');
+//           } else {
+//               $scrollUp.removeClass('show');
+//           }
+//       }
+//       $lastScrollTop = st;
+//   });
+
+//   $scrollUp.on('click', function (evt) {
+//       $('html, body').animate({scrollTop: 0}, 600);
+//       evt.preventDefault();
+//   });
+// }
+// scrollToTop();
+
+// Scroll top jquery (something is wrong here)
+
+$('#scroll-top').on('click', function(e){
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0},600)
+});
+$(window).on('scroll', function(){
+  let top = $(document).scrollTop();
+  let pageHeight = $(document).height();
+  let windowHeight = $(window).height();
+  let sumHeight = top + windowHeight;
+
+  if(sumHeight == pageHeight) {
+    $('.scroll-top').addClass('show');
+  }
+  if(top + windowHeight < pageHeight - 800) {
+    $('.scroll-top').removeClass('show');
+  }
+});
+// counter 
+$({ Counter: 0 }).animate({
+  Counter: $('.Single').text()
+}, {
+  duration: 1000,
+  easing: 'swing',
+  delay: 50,
+  step: function() {
+    $('.Single').text(Math.ceil(this.Counter));
+  }
 });
