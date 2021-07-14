@@ -200,14 +200,28 @@ $(window).on('scroll', function(){
     $('.scroll-top').removeClass('show');
   }
 });
-// counter 
-$({ Counter: 0 }).animate({
-  Counter: $('.Single').text()
+
+// counter javascript
+
+$('.counter').each(function(){ // A function to execute for each matched element.
+  var $this = $(this), // setting variable for '.counter'
+  countTo = $(this).data('count'); // takes 'data-...' atribute with title 'count'
+
+$({ countNum: 0 }).animate({  //animation function start
+  countNum: countTo // animating parameter untill our variable value
 }, {
-  duration: 1000,
-  easing: 'swing',
-  delay: 50,
-  step: function() {
-    $('.Single').text(Math.ceil(this.Counter));
+  duration: 2000, // animation parameters
+  easing: 'linear',
+  step: function() { // callback/step for each animated element
+    $this.text(Math.ceil(this.countNum));
+     // Math.ceil rounds
+     // UP number to its nearest integer(sveikasis skaičius)
+     // or Math.floor returns DOWN to its nearest integer
+  },
+  complete: function(){
+    $this.text($this.countNum);
+    // complete is called after elements animation is completed
   }
+});
+
 });

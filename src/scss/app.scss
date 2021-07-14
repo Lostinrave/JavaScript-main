@@ -77,7 +77,6 @@ $la-font-path: "~line-awesome/dist/line-awesome/fonts/";
   opacity: 0;
 }
 
-
 /* On load animation css end */
 .animated-card {
   .card-body {
@@ -389,6 +388,28 @@ a {
 
 /* Section experience CSS end*/
 
+/* Section fun facts CSS start */
+
+.fun-fact__title {
+  color: #333333;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.fun-fact__count {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.41;
+  color: #086ad8;
+}
+.fun-fact__text {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #d2a98e;
+}
+
+/* Section fun facts CSS end */
 a {
   text-decoration: none;
   color: #333;
@@ -739,7 +760,7 @@ a {
   bottom: -60px;
   z-index: 999;
   -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
-          box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
   display: block;
   padding: 0;
   width: 60px;
@@ -751,7 +772,7 @@ a {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  background-color: #086AD8;
+  background-color: #086ad8;
   background-size: 200% auto;
   background-position: left center;
   color: #ffffff;
@@ -788,14 +809,14 @@ a {
 
 .scroll-top .arrow-top {
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .scroll-top .arrow-bottom {
   -webkit-transform: translate(-50%, 80px);
-      -ms-transform: translate(-50%, 80px);
-          transform: translate(-50%, 80px);
+  -ms-transform: translate(-50%, 80px);
+  transform: translate(-50%, 80px);
 }
 
 .scroll-top:hover {
@@ -803,15 +824,14 @@ a {
 }
 .scroll-top:hover .arrow-top {
   -webkit-transform: translate(-50%, -80px);
-      -ms-transform: translate(-50%, -80px);
-          transform: translate(-50%, -80px);
+  -ms-transform: translate(-50%, -80px);
+  transform: translate(-50%, -80px);
 }
 
 .scroll-top:hover .arrow-bottom {
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 
 /* Scroll top CSS end */
