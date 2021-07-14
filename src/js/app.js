@@ -210,8 +210,9 @@ $('.counter').each(function(){ // A function to execute for each matched element
 $({ countNum: 0 }).animate({  //animation function start
   countNum: countTo // animating parameter untill our variable value
 }, {
-  duration: 2000, // animation parameters
-  easing: 'linear',
+  // animation parameters:
+  duration: 2000, // animation in miliseconds
+  easing: 'linear', // easing function
   step: function() { // callback/step for each animated element
     $this.text(Math.ceil(this.countNum));
      // Math.ceil rounds
