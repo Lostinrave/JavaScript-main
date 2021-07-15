@@ -221,7 +221,7 @@ $({ countNum: 0 }).animate({  //animation function start
   },
   complete: function(){
     $this.text($this.countNum);
-    // complete is called after elements animation is completed
+    // complete is called after an elements animation is completed
   }
 });
 
